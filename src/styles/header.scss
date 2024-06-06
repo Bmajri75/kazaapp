@@ -1,0 +1,23 @@
+header {
+  background: #333;
+  color: white;
+  padding: 1rem;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  header nav ul li {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
