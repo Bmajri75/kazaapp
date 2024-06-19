@@ -6,7 +6,7 @@ function Details() {
 
   return (
     <div>
-      <h1>Détails du logement</h1>
+      <h1>Détails H1</h1>
       <p>Voici les détails du logement numéro {id}.</p>
     </div>
   );

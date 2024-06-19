@@ -1,23 +1,51 @@
 header {
-  background: #333;
-  color: white;
+  font-family: "Montserrat", sans-serif;
+  background: #fff;
+  color: #ff6060;
   padding: 1rem;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      height: 68px;
+      width: 210px;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+  }
 }
 
-header nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-header nav ul li {
-  display: inline;
-  margin-right: 1rem;
-  cursor: pointer;
+header nav ul a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 @media (max-width: 600px) {
   header nav ul li {
     display: block;
-    margin-bottom: 1rem;
+    font-size: 12px;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      height: 47px;
+      width: 145px;
+    }
   }
 }

@@ -1,10 +1,12 @@
 import React from "react";
+import logo from "../assets/images/logo_header.svg";
 import "../styles/header.scss";
 
 function Header() {
   return (
     <header>
       <nav>
+        <img src={logo} alt="Logo" />
         <ul>
           <li>
             <a href="/">Accueil</a>

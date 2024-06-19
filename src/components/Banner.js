@@ -1,6 +1,6 @@
-import "../styles/Banner.scss";
+import "../styles/banner.scss";
 
 function Banner() {
-  return <h1> TITLE </h1>;
+  return <h1>H1 BANNER </h1>;
 }
 export default Banner;
