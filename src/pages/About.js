@@ -1,12 +1,20 @@
 import React from "react";
+import Section from "../components/Section.js";
+import Header from "../components/Header.js";
+import image from "../assets/images/background_about.png";
+import "../styles/accueil.scss";
 
-function About() {
+function Accueil() {
   return (
-    <div>
-      <h1>À proposH1</h1>
-      <p>P apropos.</p>
+    <div className="container">
+      <div className="header">
+        <Header />
+      </div>
+      <div className="body">
+        <Section background={image} src=" image banniere" />
+      </div>
     </div>
   );
 }
 
-export default About;
+export default Accueil;

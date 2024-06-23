@@ -1,10 +1,10 @@
 import React from "react";
-import "./styles/app.scss";
 import Footer from "./components/Footer";
 import Accueil from "./pages/Accueil";
 import About from "./pages/About";
 import Detail from "./pages/Detail.js";
 import NotFound from "./pages/NotFound";
+import "./styles/app.scss";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
