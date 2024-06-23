@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre horizontalement les enfants */
+  width: 100%; /* Assure que le conteneur prend toute la largeur disponible */
+  max-width: 1200px; /* Limite la largeur maximale pour éviter que le header ne dépasse */
+  margin: 0 auto; /* Centre le conteneur horizontalement */
+  padding: 0; /* Ajoute un padding autour du conteneur */
+}
+
+.header {
+  width: 100%; /* Assure que le header prend toute la largeur disponible */
+  max-width: 100%; /* Assure que le header ne dépasse pas */
+}
+
+.body {
+  width: 100%; /* Assure que le corps prend toute la largeur disponible */
+  max-width: 100%; /* Assure que le corps ne dépasse pas */
+  margin-top: 20px; /* Ajoute un espace entre le header et le body */
+}
