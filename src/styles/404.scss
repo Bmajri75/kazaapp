@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre horizontalement les enfants */
+  width: 100%; /* Assure que le conteneur prend toute la largeur disponible */
+  max-width: 1200px; /* Limite la largeur maximale pour éviter que le header ne dépasse */
+  margin: 0 auto; /* Centre le conteneur horizontalement */
+  padding: 0; /* Ajoute un padding autour du conteneur */
+}
+
+.header {
+  width: 100%; /* Assure que le header prend toute la largeur disponible */
+  max-width: 100%; /* Assure que le header ne dépasse pas */
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ff6060;
+
+  .alternatif-texte {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51.34px;
+    text-align: left;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
