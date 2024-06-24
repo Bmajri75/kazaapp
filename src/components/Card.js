@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import cover from "../datas/logements.json";
 import "../styles/card.scss";

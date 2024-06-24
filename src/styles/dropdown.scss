@@ -1,0 +1,37 @@
+.dropdown {
+  width: 1023px;
+  height: 47px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34.22px;
+  text-align: left;
+  p {
+    margin: 0.5rem;
+  }
+}
+
+.dropdown-close {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ff6060;
+  color: white;
+  padding: 0 1rem;
+}
+
+.arrow {
+  width: 1.5rem;
+}
+
+.dropdown-content {
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 34.22px;
+  text-align: left;
+
+  background: #f6f6f6;
+  p {
+    margin: 0;
+  }
+}
