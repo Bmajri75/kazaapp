@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import vector from "../assets/images/vector.svg";
 import "../styles/dropdown.scss";
 
-function Dropdown({ name }) {
+function Dropdown({ name, description }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -17,11 +17,7 @@ function Dropdown({ name }) {
       </div>
       {isOpen && (
         <div className="dropdown-content">
-          <p>
-            La bienveillance fait partie des valeurs fondatrices de Kasa. <br />
-            Tout comportement discriminatoire ou de perturbation du voisinage
-            entraînera une exclusion de notre plateforme.
-          </p>
+          <p>{description}</p>
         </div>
       )}
     </div>
