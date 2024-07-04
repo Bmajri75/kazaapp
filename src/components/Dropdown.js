@@ -11,15 +11,16 @@ function Dropdown({ name, description }) {
 
   return (
     <div className={`dropdown ${isOpen ? "open" : ""}`}>
-      <div className="dropdown-close" onClick={toggleDropdown}>
+      <div
+        className={`dropdown-close ${isOpen ? "open" : ""}`}
+        onClick={toggleDropdown}
+      >
         <p>{name}</p>
         <img className="arrow" src={vector} alt="arrow" />
       </div>
-      {isOpen && (
-        <div className="dropdown-content">
-          <p>{description}</p>
-        </div>
-      )}
+      <div className="dropdown-content">
+        <p>{description}</p>
+      </div>
     </div>
   );
 }
