@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "../styles/section.scss";
 
 function Section({ background, text }) {
@@ -12,5 +13,10 @@ function Section({ background, text }) {
     </div>
   );
 }
+
+Section.propTypes = {
+  background: PropTypes.string.isRequired,
+  text: PropTypes.string,
+};
 
 export default Section;

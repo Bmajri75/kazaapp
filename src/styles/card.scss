@@ -12,6 +12,10 @@
   justify-content: center;
   align-items: center;
   height: 300px; /* Hauteur fixe pour les cartes */
+  &:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 10px #939393;
+  }
 }
 
 .card img {

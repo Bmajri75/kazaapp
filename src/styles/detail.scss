@@ -1,4 +1,18 @@
+// src/styles/detail.scss
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .header {
-  width: 100%; /* Assure que le header prend toute la largeur disponible */
-  max-width: 100%; /* Assure que le header ne dépasse pas */
+  width: 100%;
+}
+
+.body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

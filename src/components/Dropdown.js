@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import vector from "../assets/images/vector.svg";
+import PropTypes from "prop-types";
 import "../styles/dropdown.scss";
 
 function Dropdown({ name, description }) {
@@ -24,5 +25,10 @@ function Dropdown({ name, description }) {
     </div>
   );
 }
+
+Dropdown.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
 
 export default Dropdown;

@@ -1,16 +1,9 @@
 // src/Carousel.js
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../styles/carousel.scss";
 
-const Carousel = ({ images, interval = 3000 }) => {
+const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, interval);
-    return () => clearInterval(timer);
-  }, [images.length, interval]);
 
   const goToPrevious = () => {
     setCurrentIndex(
